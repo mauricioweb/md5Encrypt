@@ -22,7 +22,8 @@ public class md5Test {
 	@Test
 	public void shouldEncryptMD5WithCommonsCodec(){
 		String data = "message";
-		System.out.println( DigestUtils.md5Hex(data));
+		String encrypted  = "78e731027d8fd50ed642340b7c9a63b3";
+		assertEquals( encrypted, DigestUtils.md5Hex(data));
 	}
 
 }
